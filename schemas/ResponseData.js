@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 const responseSchema = new mongoose.Schema({
-  surveyResponses: [
+  array: [
     {
       question: {
         type: String,
@@ -9,7 +9,7 @@ const responseSchema = new mongoose.Schema({
       },
       rating: {
         type: String,
-        required: true,
+        required: false,
       },
     },
   ],
